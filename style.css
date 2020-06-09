@@ -1,0 +1,45 @@
+.header {
+    display: grid;
+  grid-template-columns: 146px 640px auto 70px 142px;
+  grid-template-rows: 65px 57px;
+  grid-template-areas:
+    "logo bar auto apps signin"
+    ". nav . . .";
+  border-bottom: 1px solid #ebebeb;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+.bar {
+    width: 674px;
+    height: 42px;
+    border: 1px solid rgba(207, 207, 207, 0.795);
+    margin-top: 13px;
+    border-radius: 42px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+.bar:hover {
+    box-shadow: 0.5px 0.5px 5px 0.25px rgb(212, 211, 211);
+}
+
+  .apps {
+    margin-top: 25px;
+    margin-left: 30px;
+    grid-area: right;
+    float:right;
+    width: 30px;
+    fill: currentColor;
+    color: #5f6368;
+    border-radius: 50%;
+  }
+
+  .apps:hover {
+    background-color: rgba(60,64,67,0.08);
+  }
